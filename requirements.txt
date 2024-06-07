@@ -1,0 +1,12 @@
+streamlit==1.32.2
+python-dotenv==1.0.1
+pytesseract==0.3.10
+pdfplumber==0.11.0
+Pillow==10.1.0
+openai==1.10.0
+langchain==0.1.12
+langchain-community==0.0.28
+langchain-core==0.1.32
+langchain-openai==0.0.8
+langchain-text-splitters==0.0.1
+docx==0.2.4
