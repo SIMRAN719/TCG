@@ -60,13 +60,15 @@ def get_summaryprompt(uploaded_file):
         summary = chain.run(docs)
     return summary
 
-# def generate_test_cases(prompt):
-#     prompt = PromptTemplate(input_variables=['text'], template='You are a software engineer, business analyst, ai developer, data analyst at a tech company and an expert at writing test cases. You are tasked with writing atleast 10 test cases for the following requirements or summary: \n\n{text}')
-#     res = prompt.format(text=prompt)
-#     result = llm(res,max_tokens=3900)
-#     return result
-
 def generate_test_cases(prompt):
-    a = "hello this is sim"
-    return a
+    prompt = PromptTemplate(input_variables=['text'], template='You are a software engineer, business analyst, ai developer, data analyst at a tech company and an expert at writing test cases. You are tasked with writing atleast 10 test cases for the following requirements or summary: \n\n{text}')
+    res = prompt.format(text=prompt)
+    result = llm(res,max_tokens=3900)
+    return result
+
+# Testing
+
+# def generate_test_cases(prompt):
+#     a = "hello this is sim"
+#     return a
 
